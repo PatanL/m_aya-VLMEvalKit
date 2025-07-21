@@ -723,6 +723,17 @@ llava_series = {
     "varco-vision-hf": partial(
         LLaVA_OneVision_HF, model_path="NCSOFT/VARCO-VISION-14B-HF"
     ),
+    'MultimodalAya': partial(
+        MultimodalAya,
+        # IMPORTANT: Replace this with the ABSOLUTE path to your cloned `llava` codebase.
+        root='/kaggle/working/maya',
+        # These are the default model paths, you can override them if needed.
+        model_path='maya-multimodal/maya', 
+        model_base='CohereForAI/aya-23-8B',
+        mode='finetuned', # Can be 'pretrained' if you provide a projector_path
+        projector_path=None
+    ),
+
 }
 
 vita_series = {
