@@ -22,6 +22,7 @@ from .llava import (
 )
 from .vita import VITA, VITAQwen2
 from .long_vita import LongVITA
+from .maya import MultimodalAya
 from .minicpm_v import MiniCPM_V, MiniCPM_Llama3_V, MiniCPM_V_2_6, MiniCPM_o_2_6
 from .minigpt4 import MiniGPT4
 from .mmalaya import MMAlaya, MMAlaya2
