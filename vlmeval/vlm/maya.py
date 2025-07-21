@@ -6,8 +6,8 @@ import warnings
 import sys
 import os.path as osp
 
-from ..base import BaseModel
-from ...smp import *
+from .base import BaseModel
+from ..smp import *
 
 # This is the main class for your Multimodal Aya model
 class MultimodalAya(BaseModel):
