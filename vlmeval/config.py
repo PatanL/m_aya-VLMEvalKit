@@ -731,7 +731,9 @@ llava_series = {
         model_path='maya-multimodal/maya', 
         model_base='CohereForAI/aya-23-8B',
         mode='finetuned', # Can be 'pretrained' if you provide a projector_path
-        projector_path=None
+        projector_path=None,
+        load_in_8bit=True,
+        # somehow add flag for loading in 8 bit 
     ),
 
 }

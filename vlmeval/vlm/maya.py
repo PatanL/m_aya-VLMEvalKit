@@ -69,7 +69,8 @@ class MultimodalAya(BaseModel):
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
             device_map='auto', # This will split the model across your 2 T4s
-            trust_remote_code=True
+            trust_remote_code=True,
+            **kwargs
         ).eval()
 
         self.conv_mode = conv_mode
